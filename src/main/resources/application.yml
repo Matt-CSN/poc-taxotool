@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: ${password}
+    url: jdbc:postgresql://${host}:${port}/${database}
+    username: ${username}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+        ddl-auto: none
+    show-sql: false
+server:
+  port: ${SERVER_PORT}
