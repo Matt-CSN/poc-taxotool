@@ -22,13 +22,13 @@ public class TaxonomyItemEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long idProductNature;
-    private Long idStructuration;
+    private Integer idProductNature;
+    private Integer idStructuration;
     private String contextTrigram;
     private Boolean mandatory;
     private Boolean recommended;
 
-    public TaxonomyItemEntity(Long idProductNature, Long idStructuration, String context, Boolean mandatory, Boolean recommended) {
+    public TaxonomyItemEntity(Integer idProductNature, Integer idStructuration, String context, Boolean mandatory, Boolean recommended) {
         this.idProductNature = idProductNature;
         this.idStructuration = idStructuration;
         this.contextTrigram = context;
